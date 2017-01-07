@@ -1,0 +1,19 @@
+{
+  "name": "stringis",
+  "version": "0.0.1",
+  "description": "A simple regex string validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahWallace/stringIs.git"
+  },
+  "author": "Noah Wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoahWallace/stringIs/issues"
+  },
+  "homepage": "https://github.com/NoahWallace/stringIs#readme"
+}
