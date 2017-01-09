@@ -1,6 +1,18 @@
-import {expressions} from "./reg";
+import {expressions, methods} from "./reg";
 export type TStringTypes = "email" | "ssn" | "GUID"
-
-export function stringIs(str:string,type:TStringTypes):boolean{
-        return  expressions[type] ? expressions[type].test(str.toLowerCase()) : false;
+interface StringConstructor {
+    stringIs: string;
 }
+export class stringIsClass {
+    constructor() {
+        for (let k in methods) {
+            this[k]=methods[k](expressions[k])
+        }
+        return this;
+    }
+}
+
+export const stringIs = new stringIsClass()
+
+
+

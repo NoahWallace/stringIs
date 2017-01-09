@@ -4,7 +4,7 @@
   "description": "A simple regex string validator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/NoahWallace/stringIs/issues"
   },
-  "homepage": "https://github.com/NoahWallace/stringIs#readme"
+  "homepage": "https://github.com/NoahWallace/stringIs#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.36",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
